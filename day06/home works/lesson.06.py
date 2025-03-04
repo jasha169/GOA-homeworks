@@ -1,0 +1,7 @@
+print(10 + 40)
+print(200 - 49)
+print(290 * 3840)
+print(780 / 67)
+print(673 % 71)
+print(86 ** 80)
+print(782 // 422)
