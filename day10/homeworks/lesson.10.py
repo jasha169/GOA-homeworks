@@ -1,14 +1,9 @@
-# სტრიქონი (str) - ტექსტური მონაცემები
-text_variable = "Hello, World!"  # str
+# ცვლადში მნიშვნელობის შესყიდვა
+user_input = input("მიუთითეთ რაიმე მნიშვნელობა: ")
 
-# მთელი რიცხვი (int) - მთელი რიცხვები
-integer_variable = 42  # int
+# მონაცემის ტიპის შემოწმება
+input_type = type(user_input)
 
-# ბ float ტიპი - მახასიათებელი ვარფი რიცხვები
-float_variable = 3.14  # float
-
-# სტრიქონი (str) - სხვა ტექსტი
-name_variable = "John"  # str
-
-# მთელი რიცხვი (int) - სხვა მთელი რიცხვი
-age_variable = 25  # int
+# შედეგის დაბეჭდვა
+print(f"შესული მნიშვნელობა: {user_input}")
+print(f"მონაცემის ტიპი: {input_type}")
