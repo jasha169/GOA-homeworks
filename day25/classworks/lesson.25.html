@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>სურათის შეცვლა და გაფრთხილება</title>
+</head>
+<body style="font-family: Arial; padding: 30px;">
+
+    <h2 style="color: #333;">სურათის შეცვლა ღილაკებით</h2>
+
+    <!-- სურათი -->
+    <img id="funnyImage"
+         src="https://via.placeholder.com/300x200.png?text=Original+Image"
+         alt="სურათი"
+         style="width: 300px; height: 200px; display: block; margin-bottom: 20px;
+                border: 3px solid #666; transition: opacity 0.4s ease-in-out;">
+
+    <!-- ღილაკები -->
+    <button onclick="changeImage()" 
+            style="padding: 10px 15px; margin-right: 10px; background-color: #28a745; color: white; border: none; cursor: pointer;">
+        შეცვალე სურათი
+    </button>
+
+    <button onclick="resetImage()" 
+            style="padding: 10px 15px; margin-right: 10px; background-color: #dc3545; color: white; border: none; cursor: pointer;">
+        დააბრუნე სურათი
+    </button>
+
+    <button onclick="showAlert()" 
+            style="padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer;">
+        გამაფრთხილებელი ტექსტი
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        const originalImage = "https://via.placeholder.com/300x200.png?text=Original+Image";
+        const newImage = "https://i.imgur.com/4AiXzf8.jpeg"; // სახალისო სურათი (კატა)
+
+        function changeImage() {
+            const img = document.getElementById("funnyImage");
+            img.style.opacity = "0";
+            setTimeout(() => {
+                img.src = newImage;
+                img.style.opacity = "1";
+            }, 300);
+        }
+
+        function resetImage() {
+            const img = document.getElementById("funnyImage");
+            img.style.opacity = "0";
+            setTimeout(() => {
+                img.src = originalImage;
+                img.style.opacity = "1";
+            }, 300);
+        }
+
+        function showAlert() {
+            alert("Hello, have a nice day 😊");
+        }
+    </script>
+
+</body>
+</html>
