@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal CSS მაგალითი</title>
+
+    <!-- Internal CSS სტილები -->
+    <style>
+        /* პირველი CSS წესი – h1 და h2 ერთდროულად */
+        h1, h2 {
+            color: navy; /* ტექსტის ფერი */
+            background-color: #e0f7fa; /* ფონის ფერი */
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        /* მეორე CSS წესი – ყველა <p> რომელიც div-შია */
+        div p {
+            color: darkgreen; /* ტექსტის ფერი */
+            background-color: #f1f8e9; /* ფონის ფერი */
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>სათაური 1</h1>
+    <h2>სათაური 2</h2>
+
+    <div>
+        <p>ეს არის პირველი პარაგრაფი div-ის შიგნით.</p>
+        <p>ეს არის მეორე პარაგრაფი div-ის შიგნით.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* Header-ის სტილი */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+}
+
+/* Paragraph-ის სტილი */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ღილაკის სტილი */
+button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
