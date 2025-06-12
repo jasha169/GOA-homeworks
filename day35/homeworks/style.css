@@ -1,0 +1,15 @@
+#p2 {
+    text-decoration-line: overline;       /* ხაზგასმა ტექსტის თავზე */
+    text-decoration-style: dashed;        /* წყვეტილი სტილი */
+    text-decoration-color: blue;          /* ლურჯი ფერი */
+    font-size: 18px;
+}
+
+
+
+
+
+#p1 {
+    text-align: right; /* ტექსტის მარჯვენა მხარეს განლაგება */
+    font-size: 18px;
+}
