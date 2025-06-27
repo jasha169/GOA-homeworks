@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Font Family Example</title>
+
+  <!-- 1. პირველი პარაგრაფი - Google Font HTML-ით (Link Tag) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    /* 2. მეორე პარაგრაფი - @import გამოყენებით CSS-ში */
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+    /* 3. მესამე პარაგრაფი - CSS კლასით და font-family-ის მინიჭებით */
+    .opensans-font {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /* მეორე პარაგრაფის სტილი კლასით */
+    .lobster-font {
+      font-family: 'Lobster', cursive;
+    }
+
+    /* პირველი პარაგრაფის სტილი პირდაპირ ელემენტზე მიენიჭება */
+  </style>
+</head>
+<body>
+
+  <!-- პირველი პარაგრაფი -->
+  <p style="font-family: 'Roboto', sans-serif;">
+    ეს არის Roboto ფონტით დაწერილი ტექსტი. იმპორტირებულია HTML <link> ტეგის საშუალებით.
+  </p>
+
+  <!-- მეორე პარაგრაფი -->
+  <p class="lobster-font">
+    ეს არის Lobster ფონტით დაწერილი ტექსტი. იმპორტირებულია CSS-ში @import გამოყენებით და გამოყენებულია კლასი.
+  </p>
+
+  <!-- მესამე პარაგრაფი -->
+  <p class="opensans-font">
+    ეს არის Open Sans ფონტით დაწერილი ტექსტი. იმპორტირებულია CSS-ში და გამოყენებულია CSS კლასი.
+  </p>
+
+</body>
+</html>

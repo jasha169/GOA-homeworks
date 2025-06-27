@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ნავიგაცია პსევდო კლასებით</title>
+  <style>
+    /* საწყისი სტილი ბმულებისთვის */
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-right: 20px;
+      font-size: 18px;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+    }
+
+    /* 
+      :hover — პსევდო კლასი, რომელიც მოქმედებს როცა მაუსს გადაატარებ ელემენტს.
+      ეს არის ელემენტის დროებითი მდგომარეობა (hover state).
+    */
+    nav a:hover {
+      color: #007BFF;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    /* 
+      :active — პსევდო კლასი, რომელიც მოქმედებს როცა ბმულზე დაჭერილი გაქვს (click-ის მომენტში).
+      active მდგომარეობა დროებითია და მოქმედებს მხოლოდ დაჭერისას.
+    */
+    nav a:active {
+      color: white;
+      background-color: #0056b3;
+      transform: scale(0.98); /* ოდნავ დაპატარავება დაჭერისას */
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">მთავარი</a>
+    <a href="#">ჩვენს შესახებ</a>
+    <a href="#">კონტაქტი</a>
+  </nav>
+
+</body>
+</html>
