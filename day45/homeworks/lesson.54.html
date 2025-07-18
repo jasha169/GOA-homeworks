@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox მაგალითი</title>
+  <style>
+    /* Flexbox კონტეინერი */
+    #container {
+      display: flex;                     /* Flexbox აქტივაცია */
+      flex-direction: row;              /* ელემენტები განლაგებულია მარცხენიდან მარჯვნივ */
+      justify-content: space-between;   /* შუალედები ელემენტებს შორის თანაბარია */
+      align-items: center;              /* ელემენტები ვერტიკალურად ცენტრში */
+      flex-wrap: wrap;                  /* გადადიან ახალ ხაზზე საჭიროებისამებრ */
+      background-color: #eee;
+      height: 300px;
+      padding: 10px;
+    }
+
+    /* საერთო სტილი თითო box ელემენტისთვის */
+    .box {
+      width: 100px;
+      height: 100px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    /* ინდივიდუალური ფერები და flex-grow/shrink */
+    .box1 {
+      background-color: tomato;
+      flex-grow: 1;        /* იზრდება ხელმისაწვდომ სივრცეში */
+      flex-shrink: 1;      /* შეიძლება შემცირდეს */
+    }
+
+    .box2 {
+      background-color: mediumseagreen;
+      flex-grow: 2;        /* უფრო მეტად გაიზრდება ვიდრე others */
+      flex-shrink: 1;
+    }
+
+    .box3 {
+      background-color: royalblue;
+      flex-grow: 1;
+      flex-shrink: 0;      /* არ უნდა შეიკვეცოს */
+    }
+
+    .box4 {
+      background-color: gold;
+      flex-grow: 0;        /* საერთოდ არ გაიზრდება */
+      flex-shrink: 2;      /* შეიძლება შემცირდეს ორჯერ მეტად */
+    }
+
+    .box5 {
+      background-color: purple;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Flexbox container -->
+  <div id="container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    <div class="box box4">Box 4</div>
+    <div class="box box5">Box 5</div>
+  </div>
+
+</body>
+</html>
