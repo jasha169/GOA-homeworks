@@ -1,0 +1,8 @@
+.styled-text {
+  text-align: center; /* ტექსტის ცენტრში გასწორება */
+  text-decoration-line: underline; /* ხაზგასმა */
+  text-decoration-style: wavy; /* ტალღოვანი ხაზგასმა */
+  text-decoration-color: red; /* ხაზგასმის ფერი */
+  text-transform: uppercase; /* მთელი ტექსტი დიდი ასოებით */
+  text-shadow: 2px 2px 4px gray; /* ტექსტის ჩრდილი */
+}

@@ -1,0 +1,25 @@
+/* კონტეინერის საწყისი სტილები */
+.container {
+  width: 400px;
+  height: 300px;
+  border: 3px solid #333;
+  background-color: #e0f7fa;
+
+  /* ფონური გამოსახულება */
+  background-image: url('https://via.placeholder.com/500x300');
+
+  /* ზომა: contain ან cover (მოწევა ქვემოთ) */
+  background-size: contain;
+
+  /* პოზიცია: ცენტრში */
+  background-position: center;
+
+  /* ქვემოთ "attachment" ნიშნავს სქროლის დროს როგორ იმოქმედებს ფონი */
+  background-attachment: scroll;
+  
+  /* ფონური გამოსახულება არ იმეორებს */
+  background-repeat: no-repeat;
+
+  color: #000;
+  padding: 20px;
+}
